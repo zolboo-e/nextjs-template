@@ -5,15 +5,15 @@ import Link from "next/link";
 //
 import { MainLayout } from "@/lib/components";
 
-const HomePage: NextPageWithLayout = () => {
+const AboutPage: NextPageWithLayout = () => {
   return (
-    <>
-      <Link href="/about">{`About Page`}</Link>
-    </>
+    <main>
+      <Link href="/">{`Home Page`}</Link>
+    </main>
   );
 };
-HomePage.getLayout = (page) => {
+AboutPage.getLayout = (page) => {
   return <MainLayout>{page}</MainLayout>;
 };
 
-export default HomePage;
+export default AboutPage;
